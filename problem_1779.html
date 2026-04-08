@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="han-init" lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录 · ACMOJ</title>
+    <link rel="shortcut icon" href="/OnlineJudge/favicon.ico">
+    <link href="/OnlineJudge/static/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="/OnlineJudge/static/argon.min.css?v=20231109" rel="stylesheet">
+    <link href="/OnlineJudge/static/lib/han.min.css?v=20260207" rel="stylesheet"> 
+    <link href="/OnlineJudge/static/styles.css?v=20250410" rel="stylesheet">
+    <link href="/OnlineJudge/static/dark.css?v=20250106" rel="stylesheet">
+</head>
+
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-2 mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="/OnlineJudge/">ACM Class OnlineJudge</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarContent">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-10 collapse-brand">
+                            <a href="/OnlineJudge/">ACM Class OnlineJudge</a>
+                        </div>
+                        <div class="col-2 collapse-close">
+                            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarContent">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav" style="line-height: 1;">
+                    <li class="nav-item"><a href="/OnlineJudge/problem" class="nav-link">题库</a></li>
+                    <li class="nav-item"><a href="/OnlineJudge/course" class="nav-link">班级</a></li>
+                    <li class="nav-item"><a href="/OnlineJudge/contest" class="nav-link">比赛</a></li>
+                    <li class="nav-item"><a href="/OnlineJudge/homework" class="nav-link">作业</a></li>
+                    <li class="nav-item"><a href="/OnlineJudge/status" class="nav-link">评测状态</a></li>
+                    
+                    <li class="nav-item"><a href="/OnlineJudge/about" class="nav-link">关于</a></li>
+                    <li class="nav-item"><a href="/OnlineJudge/help/" class="nav-link">帮助</a></li>
+                    <li class="dropdown-divider"></li><li class="d-block d-lg-none nav-link"><a href="/OnlineJudge/login?next=%2FOnlineJudge%2Fproblem%2F1779%3F">登录</a></li>
+                    <li class="d-block d-lg-none nav-link"><a href="/OnlineJudge/register?next=%2FOnlineJudge%2Fproblem%2F1779%3F">注册</a></li>
+                </ul>
+                <ul class="navbar-nav ml-lg-auto" style="line-height: 1;">
+                    <li class="d-none d-lg-block">
+                        <a class="btn btn-neutral" href="/OnlineJudge/login?next=%2FOnlineJudge%2Fproblem%2F1779%3F">登录</a>
+                        <a class="btn btn-neutral" href="/OnlineJudge/register?next=%2FOnlineJudge%2Fproblem%2F1779%3F">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        
+    <div class="card card-body col-lg-5 m-auto">
+        <h1>登录</h1>
+        
+        <form method="POST">
+                <input name="_acmoj-csrf" type="hidden" value="EBCcJ/PscTyWXVbu">
+                <div class="form-group">
+                    <label for="username">用户名</label>
+                    <input class="form-control" type="text" name="username" id="username"
+                           required="required">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input class="form-control" type="password" name="password" id="password"
+                           required="required">
+                    <details>
+                        <summary>忘记密码？</summary>
+                        <ul>
+                            <li>
+                                如果您拥有 jAccount，且 OnlineJudge 用户注册时填写的学工号与 jAccount <a href="https://net.sjtu.edu.cn/info/1188/3626.htm">默认身份</a>的学工号相同，可以进行 jAccount 验证以重置密码。
+                                <a href="/OnlineJudge/oauth/jaccount?next=%2FOnlineJudge%2Fproblem%2F1779%3F" target="_self">
+                                    点击跳转至 jAccount 登录页面。
+                                </a>
+                                <br>
+                            </li>
+                            <li>
+                                联系运维组重置密码。运维组联系方式见 <a href="/OnlineJudge/about#mntners">关于</a>。
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+                <input type="submit" class="btn btn-block btn-primary" value="登录">
+            </form>
+    </div>
+
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="mb-0">
+                ACM Class OnlineJudge © 2020–2026
+            </p>
+        </div>
+    </footer>
+
+    <script src="/OnlineJudge/static/lib/jquery.min.js"></script>
+    <script src="/OnlineJudge/static/lib/popper.min.js"></script>
+    <script src="/OnlineJudge/static/lib/bootstrap.min.js"></script>
+    <script src="/OnlineJudge/static/lib/jquery.form.js"></script>
+    <script src="/OnlineJudge/static/lib/sweetalert.min.js"></script>
+    <script src="/OnlineJudge/static/lib/han.min.js?v=20260209"></script>
+    <script src="/OnlineJudge/static/js/base.js?v=20240214"></script>
+    
+</body>
+</html>
